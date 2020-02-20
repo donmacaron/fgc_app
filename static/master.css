@@ -3,9 +3,12 @@
   height: 100%;
 }
 
+.class-body {
+  background-color: #FF00FF;
+}
+
 
 .game-list {
-
 }
 
 .game-card {

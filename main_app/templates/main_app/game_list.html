@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Django Image Uploading</h1>
+    <ul>
+      {% for game in object_list %}
+        <h2>{{ game.game_title }}</h2>
+        <img src="{{ game.cover.url}}" alt="{{ game.title }}">
+      {% endfor %}
+    </ul>
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit New Game</button>
+    </form>
+  </body>
+</html>

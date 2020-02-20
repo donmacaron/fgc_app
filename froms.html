@@ -1,0 +1,9 @@
+<form name="GameForm"  method="post">{% csrf_token %}
+  <p><label for='game_title'>Название игры</label><br></p>
+  <p><input type="text" name='game_title' palceholder="Название игры"></p>
+
+  <p><label for='game_description'>Описание игры</label></p>
+  <p><input type="text" name='game_description'></p>
+  <p><label for="id_cover">Cover:</label> <input type="file" name="cover" accept="image/*" id="id_cover"></p>
+  <p><button type="submit">Отправить </button></p>
+</form>

@@ -1,0 +1,67 @@
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.game-list {
+
+}
+
+.game-card {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  /* height: 140px; */
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.game-card:hover {
+  background-color: GhostWhite;
+}
+
+.game-card-icon {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 5px;
+}
+
+.game-card-text {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.game-description-title {
+  border-style: solid;
+  border-width: thin;
+}
+
+.game-description-text {
+  border-style: solid;
+  border-width: thin;
+  width: 500px;
+}
+
+.game-score {
+  display: inline-block;
+  /* border-style: solid;
+  border-width: thin; */
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+
+.myFooter {
+  height: 150px;
+}

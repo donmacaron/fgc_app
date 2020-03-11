@@ -7,6 +7,13 @@ from .forms import GameForm
 
 
 # Create your views here.
+class GameCreateView(CreateView):
+    model = Game
+    fields = ('game_title', 'game_description', 'cover')
+
+
+
+
 def show(request):
     game_list = Game.objects.filter().order_by('-score')
     form = GameForm()
@@ -14,6 +21,7 @@ def show(request):
     if request.method == 'POST':
         form = GameForm(request.POST, request.FILES)
         data = request.POST.copy()
+        print(data)
         if form.is_valid():
             post = form.save(commit = False)
             post.check_existing_game(data.get('game_title'))
